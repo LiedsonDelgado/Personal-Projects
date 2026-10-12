@@ -16,20 +16,20 @@ do{
 printf("Atirar?\n");
 	printf("[1]-Sim [0]-Nao:");
 		scanf("%d",&keep_shooting);
-			random_bullet=1+rand()%6;
+		random_bullet=1+rand()%6;
 
-if (keep_shooting==0){
+if (keep_shooting == 0){
 	printf("VOCE DECIDIU NAO ARRISCAR SUA VIDA\n");
 		break;
 }
 printf("Carregando uma bala nos 6 espacos(vazios) da arma...\n");
 	sleep(3);
 
-	if(random_bullet==1){
+	if(random_bullet == 1){
 		printf(">BAANNG!!!<\n");
 			sleep(1);
 			printf("VOCE MORREU!!!\n");
-				break;
+		break;
 	}else{
 		printf(">BAANNG!!!<\n");
 			sleep(2);
@@ -37,7 +37,7 @@ printf("Carregando uma bala nos 6 espacos(vazios) da arma...\n");
 	}
 
 }
-while (keep_shooting!=0);
+while (keep_shooting != 0);
 	printf("[FIM DO JOGO!]");
 return 0;
 }
